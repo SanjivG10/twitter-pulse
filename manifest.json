@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "TwitterPulse",
+    "version": "1.0",
+    "description": "Extract and save Twitter user profile information",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://x.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://x.com/*"],
+        "js": ["contentScript.js","profile.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }

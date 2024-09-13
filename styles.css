@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1DA1F2;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #1991DB;
+  }
+  
+  .profile-item {
+    border: 1px solid #E1E8ED;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .extract-button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  .extract-button:hover {
+    background-color: #1991DB;
+  }
+  
+  .extracted {
+    background-color: #17BF63;
+  }
+
+  .extract-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  
+  /* Adjust icon position for profile header */
+  [data-testid="UserName"] .extract-icon {
+    font-size: 18px;
+  }
